@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matricula</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="icon" href="images/incolegio.png">
+  <!--Boostrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  
+  <!--barra de navegacion -->
+  <header class="header" id="header">
+    <h1><img src="../images/incolegio.png" class="logo" alt="Logo"> </h1>
+    <h1 id="namecole">ROSA FLORES <br> DE OLIVA</h1>
+    <h1 class="espacio"></h1>
+    <nav>
+        <ul>
+          <li class="link-active"><a href="../index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a class="proi" href="PropuestaInstiucioanl.html"><center>PROPUESTA <br> INSTITUCIONAL</center> </a></li>
+          <li><a href="Matricula.html">MATRICULA</a></li>
+          <li><a href="Contactenos.html">CONTACTO</a></li>
+          <li  ><a class="ri"  href="Ingresar.html">SIGN IN</a></li>
+    </nav>
+  </header>
+  
+<!--Fin barra de NAVEGACION-->
+
+
+  <div align="right"><a href="../index.html">VOLVER A LA PAGINA PRINCIPAL</a></div>
+  <h2> <center> PROCESO DE MATRICULA 2023</center></h2>
+  <form method="POST" action="datos.php">
+    <h4>A tener en cuenta: </h4>
+    <ol>
+      <li>Ser estudiante promovido de grado. No ser repitente.</li>
+      <li>Los niños de 3, 4 y 5 niños de edad, para el Nivel Inicial y, los que ingresan a 1° grado de Primaria, deben
+        cumplir con la edad requerida hasta el 31 de marzo del presente año.</li>
+    </ol>
+    <h2>Documentos para matricula.</h2>
+    <ol>
+      <li>Copia del DNI, pasaporte o Carnet de Extranjería</li>
+      <li>Copia del último reporte de notas (libreta) o informe de progreso del colegio de procedencia</li>
+      <li>Resolución de traslado del colegio de procedencia.</li>
+      <li>Constancia de Conducta</li>
+    </ol>
+    <h2>Datos para la matricula</h2>
+    <hr>
+    <fieldset>
+      <legend>DATOS DEL APODERADO</legend>
+      <h3>Nombre del apoderado(a):</h3>
+      <label for="Nombre"></label> <input id="Nombre" type="text" name="Nombre" size="30" maxlength="20"><br />
+
+      <h3>Apellidos:</h3>
+      <label for="Apellidos"></label> <input id="Apellidos" type="text" name="Apellidos" size="30" maxlength="20"><br />
+
+      <h3>Sexo:</h3>
+      <input type="radio" name="sexo" value="Masculino">Masculino<br />
+      <input type="radio" name="sexo" value="Femenino">Femenino<br />
+
+      <h3><label for="Direccion">Ingrese su Direccion:</label></h3>
+      <input id="Direccion" type="text" name="Direccion" size="30" maxlength="50"><br />
+
+      <h3><label for="Correo">Ingrese su Correo Electronico:</label></h3>
+      <input id="Correo" type="text" name="Correo" size="30" maxlength="50"><br />
+
+
+      <h3>Fecha de Nacimiento:</h3>
+      <label for="Nacimiento"></label> <input id="Nacimiento" type="text" name="Nacimiento" size="10"
+        maxlength="10"><br />
+
+      <h3>Ingrese su DNI:</h3>
+      <label for="DNI"></label> <input id="DNI" type="text" name="DNI" size="10" maxlength="7"><br />
+
+      <h3>Turno al que desea poner al estudiante:</h3>
+      <select><br>
+        <option>Mañana</option>
+        <option>Tarde</option>
+      </select><br>
+
+      <h4>Observaciones:</h4>
+      <textarea cols="50" rows="5"></textarea>
+      <br /><br />
+      <input type="button" name="Guardar" value="GUARDAR">
+    </fieldset><br />
+
+
+    <fieldset>
+      <legend>DATOS DEL ALUMNO(a): </legend>
+      <h3>Nombre del Alumno(a):</h3>
+      <label for="Nombre"></label> <input id="Nombre" type="text" name="Nombre" size="30" maxlength="20"><br />
+
+      <h3>Apellidos:</h3>
+      <label for="Apellidos"></label> <input id="Apellidos" type="text" name="Apellidos" size="30" maxlength="20"><br />
+
+      <h3>Sexo:</h3>
+      <input type="radio" name="sexo" value="Masculino">Masculino<br />
+      <input type="radio" name="sexo" value="Femenino">Femenino<br />
+
+
+      <h3>Fecha de Nacimiento:</h3>
+      <label for="Nacimiento"></label> <input id="Nacimiento" type="text" name="Nacimiento" size="10"
+        maxlength="10"><br />
+
+      <h3>Ingrese su DNI:</h3>
+      <label for="DNI"></label> <input id="DNI" type="text" name="DNI" size="10" maxlength="7"><br /><br />
+
+      <h3>Año que cursa:</h3>
+      <select><br>
+        <option>--Seleccione--</option>
+        <option>1ero</option>
+        <option>2do</option>
+        <option>3do</option>
+        <option>4do</option>
+        <option>5do</option>
+      </select><br /><br />
+
+      <h3>Incapacidad Fisica:</h3>
+      <select><br>
+        <option>--Seleccione--</option>
+        <option>Si</option>
+        <option>No</option>
+      </select><br />
+      <h4>Si la respuesta es "SI", Cual es?</h4>
+      <textarea cols="50" rows="5"></textarea>
+      <br /><br />
+
+      <input type="button" name="Guardar" value="GUARDAR">
+    </fieldset><br />
+    <input type="button" name="Enviar" value="Enviar">
+
+</body>
+
+</html>
